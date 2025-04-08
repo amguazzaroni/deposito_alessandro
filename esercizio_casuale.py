@@ -10,9 +10,10 @@ def indovina_il_numero():
         numero_inserito = int(input("indovina il numero"))
         if numero_casuale == numero_inserito:
              print("hai vinto")
+            break
         elif numero_inserito > numero_casuale:
             print("numero inserito più alto")
-        elif numero_inserito < numero_casuale:
+        else:
             print("numero inserito più basso")
         
 indovina_il_numero()
