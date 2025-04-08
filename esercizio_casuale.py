@@ -1,6 +1,6 @@
-import random
+import random #importazione libreria
 def indovina_il_numero():
-    numero_casuale = random.randint(1,100)
+    numero_casuale = random.randint(1,100) #random integer da 1 a 100
 
     while True:
         numero_inserito = input("Indovina il numero (o digita 'esc' per terminare): ")
@@ -10,7 +10,7 @@ def indovina_il_numero():
         numero_inserito = int(input("indovina il numero"))
         if numero_casuale == numero_inserito:
              print("hai vinto")
-            break
+            break #interruzione ciclo
         elif numero_inserito > numero_casuale:
             print("numero inserito più alto")
         else:
